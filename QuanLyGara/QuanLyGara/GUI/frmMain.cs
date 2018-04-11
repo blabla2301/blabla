@@ -501,6 +501,7 @@ namespace QuanLyGara.GUI
             //txtMaPhieu.Enabled = false;
         }
 
+<<<<<<< HEAD
         private void mnuTK_NV_Click(object sender, EventArgs e)
         {
             GUI.frmThongKe_NV frm = new frmThongKe_NV();
@@ -530,5 +531,85 @@ namespace QuanLyGara.GUI
             GUI.frmThongKe_HD_TT frm = new frmThongKe_HD_TT();
             frm.ShowDialog();
         }
+=======
+        private void kháchHàngToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GUI.frmTimKiemKH frm = new frmTimKiemKH();
+            frm.ShowDialog();
+        }
+
+        private void thôngTinXeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GUI.frmTimKiemTTX frm = new frmTimKiemTTX();
+            frm.ShowDialog();
+        }
+
+        private void phiếuKhảoSátToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GUI.frmTimKiemPKS frm = new frmTimKiemPKS();
+            frm.ShowDialog();
+        }
+
+        private void phiếuĐánhGiáToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GUI.frmTimKiemPDG frm = new frmTimKiemPDG();
+            frm.ShowDialog();
+        }
+
+        private void vậtTưToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GUI.frmTimKiemVatTu frm = new frmTimKiemVatTu();
+            frm.ShowDialog();
+        }
+
+        private void phiếuVậtTưToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GUI.frmTimKiemPVT frm = new frmTimKiemPVT();
+            frm.ShowDialog();
+        }
+
+        private void nhàCungCấpToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GUI.frmTimKiemNCC frm = new frmTimKiemNCC();
+            frm.ShowDialog();
+        }
+
+        private void hóaĐơnPhiếuVậtTưToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GUI.frmTimKiemHD_PVT frm = new frmTimKiemHD_PVT();
+            frm.ShowDialog();
+        }
+
+        private void lệnhSửaChữaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GUI.frmTimKiemLSC frm = new frmTimKiemLSC();
+            frm.ShowDialog();
+        }
+
+        private void nhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GUI.frmTimKiemNV frm = new frmTimKiemNV();
+            frm.ShowDialog();
+        }
+
+        private void phânCôngToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GUI.frmTimKiemPC frm = new frmTimKiemPC();
+            frm.ShowDialog();
+        }
+
+        private void hóaĐơnThanhToánToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GUI.frmTimKiemHDTT frm = new frmTimKiemHDTT();
+            frm.ShowDialog();
+        }
+
+        private void hãngXeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GUI.frmTimKiemHangXe frm = new frmTimKiemHangXe();
+            frm.ShowDialog();
+        }
+
+>>>>>>> 16ef514fb69cfe8bd4426902d0a42244f1cefe0d
     }
 }

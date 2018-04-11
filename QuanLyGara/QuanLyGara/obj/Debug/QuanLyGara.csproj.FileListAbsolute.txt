@@ -27,6 +27,7 @@ E:\workspace\C#\WindowsForm\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmDo
 E:\workspace\C#\WindowsForm\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmQuanLyNguoiDung.resources
 E:\workspace\C#\WindowsForm\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmThongKe_KH.resources
 E:\workspace\C#\WindowsForm\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmHangXe.resources
+<<<<<<< HEAD
 C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\bin\Debug\QuanLyGara.exe.config
 C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\bin\Debug\QuanLyGara.exe
 C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\bin\Debug\QuanLyGara.pdb
@@ -62,3 +63,47 @@ C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GU
 C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmThongKe_HD_TT.resources
 C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmThongKe_NCC.resources
 C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmThongKe_NV.resources
+=======
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\bin\Debug\QuanLyGara.exe.config
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.exe
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.pdb
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\bin\Debug\QuanLyGara.exe
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\bin\Debug\QuanLyGara.pdb
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.csprojResolveAssemblyReference.cache
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmChiTietNguoiDung.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmDangNhap.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmDoiMatKhau.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmHangXe.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmHoaDonThanhToan.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmHoaDon_PhieuVatTu.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmKhachHang.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmLenhSuaChua.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmMain.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmNguoiDung.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmNhaCungCap.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmNhanVien.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmPhanCong.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmPhieuDanhGia.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmPhieuKhaoSat.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmPhieuVatTu.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmQuanLyNguoiDung.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmQuyenHan.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmThongKe_KH.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmThongTinXe.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmVatTu.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.Properties.Resources.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.csproj.GenerateResource.Cache
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmTimKiemHDTT.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmTimKiemHD_PVT.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmTimKiemKH.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmTimKiemLSC.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmTimKiemNCC.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmTimKiemNV.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmTimKiemPC.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmTimKiemPDG.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmTimKiemPKS.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmTimKiemPVT.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmTimKiemTTX.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmTimKiemVatTu.resources
+D:\Nam3_Ki2\Thực tập cơ sở dữ liệu\GIT\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmTimKiemHangXe.resources
+>>>>>>> 16ef514fb69cfe8bd4426902d0a42244f1cefe0d

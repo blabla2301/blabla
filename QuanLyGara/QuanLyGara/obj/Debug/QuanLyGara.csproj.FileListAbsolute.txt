@@ -27,3 +27,38 @@ E:\workspace\C#\WindowsForm\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmDo
 E:\workspace\C#\WindowsForm\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmQuanLyNguoiDung.resources
 E:\workspace\C#\WindowsForm\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmThongKe_KH.resources
 E:\workspace\C#\WindowsForm\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmHangXe.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\bin\Debug\QuanLyGara.exe.config
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\bin\Debug\QuanLyGara.exe
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\bin\Debug\QuanLyGara.pdb
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.csprojResolveAssemblyReference.cache
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmChiTietNguoiDung.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmDangNhap.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmDoiMatKhau.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmHangXe.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmHoaDonThanhToan.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmHoaDon_PhieuVatTu.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmKhachHang.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmLenhSuaChua.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmMain.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmNguoiDung.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmNhaCungCap.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmNhanVien.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmPhanCong.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmPhieuDanhGia.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmPhieuKhaoSat.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmPhieuVatTu.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmQuanLyNguoiDung.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmQuyenHan.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmThongKe_KH.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmThongTinXe.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmVatTu.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.Properties.Resources.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.csproj.GenerateResource.cache
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.csproj.CoreCompileInputs.cache
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.exe
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.pdb
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.csproj.ResolveComReference.cache
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmThongKe_HD_PVT.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmThongKe_HD_TT.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmThongKe_NCC.resources
+C:\Users\Suu Nguyen\Desktop\blabla\QuanLyGara\QuanLyGara\obj\Debug\QuanLyGara.GUI.frmThongKe_NV.resources

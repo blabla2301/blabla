@@ -88,6 +88,15 @@
             this.toolStripSeparator26 = new System.Windows.Forms.ToolStripSeparator();
             this.hóaĐơnThanhToánToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tHỐNGKÊToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuTK_NV = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator27 = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuTK_KH = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator28 = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuTK_NCC = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuTK_HD_PVT = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator30 = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuTK_HD_TT = new System.Windows.Forms.ToolStripMenuItem();
             this.tRỢGIÚPToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -104,6 +113,12 @@
             this.txtYeuCau = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -134,12 +149,6 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -576,10 +585,75 @@
             // 
             // tHỐNGKÊToolStripMenuItem
             // 
+            this.tHỐNGKÊToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuTK_NV,
+            this.toolStripSeparator27,
+            this.mnuTK_KH,
+            this.toolStripSeparator28,
+            this.mnuTK_NCC,
+            this.toolStripSeparator29,
+            this.mnuTK_HD_PVT,
+            this.toolStripSeparator30,
+            this.mnuTK_HD_TT});
             this.tHỐNGKÊToolStripMenuItem.Image = global::QuanLyGara.Properties.Resources._3d_bar_chart;
             this.tHỐNGKÊToolStripMenuItem.Name = "tHỐNGKÊToolStripMenuItem";
             this.tHỐNGKÊToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
             this.tHỐNGKÊToolStripMenuItem.Text = "THỐNG KÊ";
+            // 
+            // mnuTK_NV
+            // 
+            this.mnuTK_NV.Name = "mnuTK_NV";
+            this.mnuTK_NV.Size = new System.Drawing.Size(191, 22);
+            this.mnuTK_NV.Text = "Nhân Viên";
+            this.mnuTK_NV.Click += new System.EventHandler(this.mnuTK_NV_Click);
+            // 
+            // toolStripSeparator27
+            // 
+            this.toolStripSeparator27.Name = "toolStripSeparator27";
+            this.toolStripSeparator27.Size = new System.Drawing.Size(188, 6);
+            // 
+            // mnuTK_KH
+            // 
+            this.mnuTK_KH.Name = "mnuTK_KH";
+            this.mnuTK_KH.Size = new System.Drawing.Size(191, 22);
+            this.mnuTK_KH.Text = "Khách Hàng";
+            this.mnuTK_KH.Click += new System.EventHandler(this.mnuTK_KH_Click);
+            // 
+            // toolStripSeparator28
+            // 
+            this.toolStripSeparator28.Name = "toolStripSeparator28";
+            this.toolStripSeparator28.Size = new System.Drawing.Size(188, 6);
+            // 
+            // mnuTK_NCC
+            // 
+            this.mnuTK_NCC.Name = "mnuTK_NCC";
+            this.mnuTK_NCC.Size = new System.Drawing.Size(191, 22);
+            this.mnuTK_NCC.Text = "Nhà Cung Cấp";
+            this.mnuTK_NCC.Click += new System.EventHandler(this.mnuTK_NCC_Click);
+            // 
+            // toolStripSeparator29
+            // 
+            this.toolStripSeparator29.Name = "toolStripSeparator29";
+            this.toolStripSeparator29.Size = new System.Drawing.Size(188, 6);
+            // 
+            // mnuTK_HD_PVT
+            // 
+            this.mnuTK_HD_PVT.Name = "mnuTK_HD_PVT";
+            this.mnuTK_HD_PVT.Size = new System.Drawing.Size(191, 22);
+            this.mnuTK_HD_PVT.Text = "Hóa Đơn Phiếu Vật Tư";
+            this.mnuTK_HD_PVT.Click += new System.EventHandler(this.mnuTK_HD_PVT_Click);
+            // 
+            // toolStripSeparator30
+            // 
+            this.toolStripSeparator30.Name = "toolStripSeparator30";
+            this.toolStripSeparator30.Size = new System.Drawing.Size(188, 6);
+            // 
+            // mnuTK_HD_TT
+            // 
+            this.mnuTK_HD_TT.Name = "mnuTK_HD_TT";
+            this.mnuTK_HD_TT.Size = new System.Drawing.Size(191, 22);
+            this.mnuTK_HD_TT.Text = "Hóa Đơn Thanh Toán";
+            this.mnuTK_HD_TT.Click += new System.EventHandler(this.mnuTK_HD_TT_Click);
             // 
             // tRỢGIÚPToolStripMenuItem1
             // 
@@ -771,7 +845,56 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin khách hàng";
-//            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(171, 124);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(291, 24);
+            this.comboBox7.TabIndex = 40;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(171, 81);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(291, 24);
+            this.comboBox6.TabIndex = 39;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(171, 38);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(291, 24);
+            this.comboBox5.TabIndex = 38;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(621, 124);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(60, 24);
+            this.comboBox4.TabIndex = 37;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(621, 38);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(60, 24);
+            this.comboBox3.TabIndex = 36;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(522, 127);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 16);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "ID xe";
             // 
             // label4
             // 
@@ -940,7 +1063,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 31);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1246, 652);
+            this.tabPage2.Size = new System.Drawing.Size(1329, 652);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Thông tin vật tư";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -951,7 +1074,7 @@
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox5.Location = new System.Drawing.Point(3, 55);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(1240, 214);
+            this.groupBox5.Size = new System.Drawing.Size(1323, 214);
             this.groupBox5.TabIndex = 2;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Danh sách";
@@ -962,7 +1085,7 @@
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.Location = new System.Drawing.Point(3, 18);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1234, 193);
+            this.listView1.Size = new System.Drawing.Size(1317, 193);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -980,7 +1103,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1240, 52);
+            this.panel2.Size = new System.Drawing.Size(1323, 52);
             this.panel2.TabIndex = 1;
             // 
             // button1
@@ -1084,7 +1207,7 @@
             this.pnlDSVT.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlDSVT.Location = new System.Drawing.Point(3, 269);
             this.pnlDSVT.Name = "pnlDSVT";
-            this.pnlDSVT.Size = new System.Drawing.Size(1240, 380);
+            this.pnlDSVT.Size = new System.Drawing.Size(1323, 380);
             this.pnlDSVT.TabIndex = 0;
             // 
             // panel4
@@ -1096,7 +1219,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 323);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1240, 57);
+            this.panel4.Size = new System.Drawing.Size(1323, 57);
             this.panel4.TabIndex = 9;
             // 
             // button6
@@ -1134,56 +1257,6 @@
             this.button8.Text = "Lưu";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button8.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(522, 127);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 16);
-            this.label5.TabIndex = 34;
-            this.label5.Text = "ID xe";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(621, 38);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(60, 24);
-            this.comboBox3.TabIndex = 36;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(621, 124);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(60, 24);
-            this.comboBox4.TabIndex = 37;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(171, 38);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(291, 24);
-            this.comboBox5.TabIndex = 38;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(171, 81);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(291, 24);
-            this.comboBox6.TabIndex = 39;
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(171, 124);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(291, 24);
-            this.comboBox7.TabIndex = 40;
             // 
             // frmMain
             // 
@@ -1337,5 +1410,14 @@
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ToolStripMenuItem mnuTK_NV;
+        private System.Windows.Forms.ToolStripMenuItem mnuTK_KH;
+        private System.Windows.Forms.ToolStripMenuItem mnuTK_NCC;
+        private System.Windows.Forms.ToolStripMenuItem mnuTK_HD_PVT;
+        private System.Windows.Forms.ToolStripMenuItem mnuTK_HD_TT;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator27;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator28;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator30;
     }
 }

@@ -12,14 +12,14 @@ using System.Windows.Forms;
 
 namespace QuanLyGara.GUI
 {
-    public partial class frmThongKe_KH : Form
+    public partial class frmThongKe_NCC : Form
     {
-        public frmThongKe_KH()
+        public frmThongKe_NCC()
         {
             InitializeComponent();
         }
 
-        private void frmThongKe_KH_Load(object sender, EventArgs e)
+        private void frmThongKe_NCC_Load(object sender, EventArgs e)
         {
             loadCombobox();
             showList();
@@ -28,11 +28,10 @@ namespace QuanLyGara.GUI
         {
             cmbTK.SelectedIndex = 0;
         }
-
         public void showList()
         {
             clearList();
-            string query = "select kh.ID_KhachHang, kh.HoTen, tt.BienSoXe, hx.HangXe, tt.DoiXe,tt.SoKhung, tt.SoMay, kh.SDT, kh.Email, kh.DiaChi from KHACHHANG kh, PHIEUKHAOSAT ks, THONGTINXE tt, HANGXE hx where kh.ID_KhachHang = ks.ID_KhachHang and ks.ID_Xe = tt.ID_Xe and tt.ID_HangXe = hx.ID_HangXe";
+            string query = "select ncc.ID_NhaCungCap, vt.ID_VatTu, ncc.TenNCC, vt.TenVatTu, ncc.DiaChi, ncc.SDT, ncc.Email, ncc.Website, hd.SoLuong, vt.SoTien, hd.TongTien from NHACUNGCAP ncc, VATTU vt, HOADON_PHIEUVATTU hd where ncc.ID_NhaCungCap = vt.ID_NhaCungCap and vt.ID_VatTu = hd.ID_VatTu";
             SqlDataReader dr = null;
             try
             {
@@ -49,25 +48,26 @@ namespace QuanLyGara.GUI
             }
         }
 
-        public void addList(SqlDataReader dr)
+        private void addList(SqlDataReader dr)
         {
             ListViewItem item = new ListViewItem();
-            item.Text = dr["ID_KhachHang"].ToString();
-            item.SubItems.Add(dr["HoTen"].ToString());
-            item.SubItems.Add(dr["BienSoXe"].ToString());
-            item.SubItems.Add(dr["HangXe"].ToString());
-            item.SubItems.Add(dr["DoiXe"].ToString());
-            item.SubItems.Add(dr["SoKhung"].ToString());
-            item.SubItems.Add(dr["SoMay"].ToString());
+            item.Text = dr["ID_NhaCungCap"].ToString();
+            item.SubItems.Add(dr["ID_VatTu"].ToString());
+            item.SubItems.Add(dr["TenNCC"].ToString());
+            item.SubItems.Add(dr["TenVatTu"].ToString());
+            item.SubItems.Add(dr["DiaChi"].ToString());
             item.SubItems.Add(dr["SDT"].ToString());
             item.SubItems.Add(dr["Email"].ToString());
-            item.SubItems.Add(dr["DiaChi"].ToString());
+            item.SubItems.Add(dr["Website"].ToString());
+            item.SubItems.Add(dr["SoLuong"].ToString());
+            item.SubItems.Add(dr["SoTien"].ToString());
+            item.SubItems.Add(dr["TongTien"].ToString());
             lsvDanhSach.Items.Add(item);
         }
 
-        public void clearList()
+        private void clearList()
         {
-            foreach (ListViewItem item in lsvDanhSach.Items)
+            foreach(ListViewItem item in lsvDanhSach.Items)
             {
                 item.Remove();
             }
@@ -78,20 +78,20 @@ namespace QuanLyGara.GUI
             clearList();
             string key = txtTK.Text.Trim();
             DAL.sqlConnect sqlConn = new DAL.sqlConnect();
-            string query;
+            string query = null;
             SqlDataReader dr = null;
-            if (cmbTK.Text.Equals("Mã khách hàng"))
+            if (cmbTK.Text.Equals("Tên nhà cung cấp"))
             {
-                query = "select kh.ID_KhachHang, kh.HoTen, tt.BienSoXe, hx.HangXe, tt.DoiXe, tt.SoKhung, tt.SoMay, kh.SDT, kh.Email, kh.DiaChi from KHACHHANG kh, PHIEUKHAOSAT ks, THONGTINXE tt, HANGXE hx where kh.ID_KhachHang = ks.ID_KhachHang and ks.ID_Xe = tt.ID_Xe and tt.ID_HangXe = hx.ID_HangXe and kh.ID_KhachHang like '" + key + "%'";
+                query = "select ncc.ID_NhaCungCap, vt.ID_VatTu, ncc.TenNCC, vt.TenVatTu, ncc.DiaChi, ncc.SDT, ncc.Email, ncc.Website, hd.SoLuong, vt.SoTien, hd.TongTien from NHACUNGCAP ncc, VATTU vt, HOADON_PHIEUVATTU hd where ncc.ID_NhaCungCap = vt.ID_NhaCungCap and vt.ID_VatTu = hd.ID_VatTu and ncc.TenNCC like '" + key + "%'";
                 dr = sqlConn.execCommand(query);
                 while (dr.Read())
                 {
                     addList(dr);
                 }
             }
-            else if (cmbTK.Text.Equals("Họ tên"))
+            else if (cmbTK.Text.Equals("Tên vật tư"))
             {
-                query = "select kh.ID_KhachHang, kh.HoTen, tt.BienSoXe, hx.HangXe, tt.DoiXe, tt.SoKhung, tt.SoMay, kh.SDT, kh.Email, kh.DiaChi from KHACHHANG kh, PHIEUKHAOSAT ks, THONGTINXE tt, HANGXE hx where kh.ID_KhachHang = ks.ID_KhachHang and ks.ID_Xe = tt.ID_Xe and tt.ID_HangXe = hx.ID_HangXe and kh.HoTen like '" + key + "%'";
+                query = "select ncc.ID_NhaCungCap, vt.ID_VatTu, ncc.TenNCC, vt.TenVatTu, ncc.DiaChi, ncc.SDT, ncc.Email, ncc.Website, hd.SoLuong, vt.SoTien, hd.TongTien from NHACUNGCAP ncc, VATTU vt, HOADON_PHIEUVATTU hd where ncc.ID_NhaCungCap = vt.ID_NhaCungCap and vt.ID_VatTu = hd.ID_VatTu and vt.TenVatTu like '" + key + "%'";
                 dr = sqlConn.execCommand(query);
                 while (dr.Read())
                 {
@@ -100,13 +100,14 @@ namespace QuanLyGara.GUI
             }
             else
             {
-                query = "select kh.ID_KhachHang, kh.HoTen, tt.BienSoXe, hx.HangXe, tt.DoiXe, tt.SoKhung, tt.SoMay, kh.SDT, kh.Email, kh.DiaChi from KHACHHANG kh, PHIEUKHAOSAT ks, THONGTINXE tt, HANGXE hx where kh.ID_KhachHang = ks.ID_KhachHang and ks.ID_Xe = tt.ID_Xe and tt.ID_HangXe = hx.ID_HangXe and tt.BienSoXe like '" + key + "%'";
+                query = "select ncc.ID_NhaCungCap, vt.ID_VatTu, ncc.TenNCC, vt.TenVatTu, ncc.DiaChi, ncc.SDT, ncc.Email, ncc.Website, hd.SoLuong, vt.SoTien, hd.TongTien from NHACUNGCAP ncc, VATTU vt, HOADON_PHIEUVATTU hd where ncc.ID_NhaCungCap = vt.ID_NhaCungCap and vt.ID_VatTu = hd.ID_VatTu and hd.SoLuong like '" + key + "%'";
                 dr = sqlConn.execCommand(query);
                 while (dr.Read())
                 {
                     addList(dr);
                 }
             }
+
         }
 
         private void btnInDanhSach_Click(object sender, EventArgs e)
@@ -131,7 +132,7 @@ namespace QuanLyGara.GUI
                     sheet = wb.ActiveSheet;
                     sheet.Name = "Dữ liệu xuất ra";
                     sheet.Range[sheet.Cells[1, 1], sheet.Cells[1, lsvDanhSach.Columns.Count]].Merge();
-                    sheet.Cells[1, 1].Value = "Danh sách khách hàng";
+                    sheet.Cells[1, 1].Value = "Danh sách nhà cung cấp";
                     sheet.Cells[1, 1].HorizontalAlignment = XlHAlign.xlHAlignCenter;
                     sheet.Cells[1, 1].Font.Size = 20;
                     sheet.Cells[1, 1].Borders.Weight = XlBorderWeight.xlThin;

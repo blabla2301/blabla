@@ -500,5 +500,35 @@ namespace QuanLyGara.GUI
             //txtBienSoXe.Enabled = false;
             //txtMaPhieu.Enabled = false;
         }
+
+        private void mnuTK_NV_Click(object sender, EventArgs e)
+        {
+            GUI.frmThongKe_NV frm = new frmThongKe_NV();
+            frm.ShowDialog();
+        }
+
+        private void mnuTK_KH_Click(object sender, EventArgs e)
+        {
+            GUI.frmThongKe_KH frm = new frmThongKe_KH();
+            frm.ShowDialog();
+        }
+
+        private void mnuTK_NCC_Click(object sender, EventArgs e)
+        {
+            GUI.frmThongKe_NCC frm = new frmThongKe_NCC();
+            frm.ShowDialog();
+        }
+
+        private void mnuTK_HD_PVT_Click(object sender, EventArgs e)
+        {
+            GUI.frmThongKe_HD_PVT frm = new frmThongKe_HD_PVT();
+            frm.ShowDialog();
+        }
+
+        private void mnuTK_HD_TT_Click(object sender, EventArgs e)
+        {
+            GUI.frmThongKe_HD_TT frm = new frmThongKe_HD_TT();
+            frm.ShowDialog();
+        }
     }
 }

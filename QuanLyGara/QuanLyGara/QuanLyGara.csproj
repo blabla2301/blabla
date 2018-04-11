@@ -190,11 +190,35 @@
     <Compile Include="GUI\frmQuyenHan.Designer.cs">
       <DependentUpon>frmQuyenHan.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmThongKe_HD_PVT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmThongKe_HD_PVT.Designer.cs">
+      <DependentUpon>frmThongKe_HD_PVT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmThongKe_HD_TT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmThongKe_HD_TT.Designer.cs">
+      <DependentUpon>frmThongKe_HD_TT.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmThongKe_KH.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\frmThongKe_KH.Designer.cs">
       <DependentUpon>frmThongKe_KH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmThongKe_NCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmThongKe_NCC.Designer.cs">
+      <DependentUpon>frmThongKe_NCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmThongKe_NV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmThongKe_NV.Designer.cs">
+      <DependentUpon>frmThongKe_NV.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmThongTinXe.cs">
       <SubType>Form</SubType>
@@ -208,6 +232,7 @@
     <Compile Include="GUI\frmVatTu.Designer.cs">
       <DependentUpon>frmVatTu.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\sqlDataReader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\frmChiTietNguoiDung.resx">
@@ -264,8 +289,20 @@
     <EmbeddedResource Include="GUI\frmQuyenHan.resx">
       <DependentUpon>frmQuyenHan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmThongKe_HD_PVT.resx">
+      <DependentUpon>frmThongKe_HD_PVT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmThongKe_HD_TT.resx">
+      <DependentUpon>frmThongKe_HD_TT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmThongKe_KH.resx">
       <DependentUpon>frmThongKe_KH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmThongKe_NCC.resx">
+      <DependentUpon>frmThongKe_NCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmThongKe_NV.resx">
+      <DependentUpon>frmThongKe_NV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmThongTinXe.resx">
       <DependentUpon>frmThongTinXe.cs</DependentUpon>
@@ -370,6 +407,38 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Symbol-Delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_printer_16414.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

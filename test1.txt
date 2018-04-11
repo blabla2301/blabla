@@ -2,5 +2,7 @@ branch test1
 code tren branch nay
 1 thang khac cungx dang sua file nay
 commmit cua thang khac
+commit cua test2
+editcode test2
 code xong xuoi cac kieu
 thi commit va push len

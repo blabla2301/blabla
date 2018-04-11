@@ -1,4 +1,6 @@
 branch test1
 code tren branch nay
+1 thang khac cungx dang sua file nay
+commmit cua thang khac
 code xong xuoi cac kieu
 thi commit va push len

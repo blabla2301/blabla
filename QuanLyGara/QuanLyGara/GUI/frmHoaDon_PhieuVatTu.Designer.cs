@@ -32,9 +32,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtMaHDVT = new System.Windows.Forms.TextBox();
+            this.txtID_HoaDonVatTu = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.cmbMaPVT = new System.Windows.Forms.ComboBox();
+            this.cmbID_PhieuVatTu = new System.Windows.Forms.ComboBox();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -56,6 +56,8 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbTimKiem = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cmbID_VatTu = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -94,9 +96,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtMaHDVT);
+            this.groupBox1.Controls.Add(this.cmbID_VatTu);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.txtID_HoaDonVatTu);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.cmbMaPVT);
+            this.groupBox1.Controls.Add(this.cmbID_PhieuVatTu);
             this.groupBox1.Controls.Add(this.btnHuy);
             this.groupBox1.Controls.Add(this.btnLuu);
             this.groupBox1.Controls.Add(this.btnXoa);
@@ -115,13 +119,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chức năng";
             // 
-            // txtMaHDVT
+            // txtID_HoaDonVatTu
             // 
-            this.txtMaHDVT.Location = new System.Drawing.Point(132, 35);
-            this.txtMaHDVT.Multiline = true;
-            this.txtMaHDVT.Name = "txtMaHDVT";
-            this.txtMaHDVT.Size = new System.Drawing.Size(236, 25);
-            this.txtMaHDVT.TabIndex = 21;
+            this.txtID_HoaDonVatTu.Location = new System.Drawing.Point(132, 35);
+            this.txtID_HoaDonVatTu.Multiline = true;
+            this.txtID_HoaDonVatTu.Name = "txtID_HoaDonVatTu";
+            this.txtID_HoaDonVatTu.Size = new System.Drawing.Size(236, 25);
+            this.txtID_HoaDonVatTu.TabIndex = 21;
             // 
             // label5
             // 
@@ -133,13 +137,13 @@
             this.label5.TabIndex = 20;
             this.label5.Text = "Mã hóa đơn";
             // 
-            // cmbMaPVT
+            // cmbID_PhieuVatTu
             // 
-            this.cmbMaPVT.FormattingEnabled = true;
-            this.cmbMaPVT.Location = new System.Drawing.Point(132, 72);
-            this.cmbMaPVT.Name = "cmbMaPVT";
-            this.cmbMaPVT.Size = new System.Drawing.Size(236, 21);
-            this.cmbMaPVT.TabIndex = 19;
+            this.cmbID_PhieuVatTu.FormattingEnabled = true;
+            this.cmbID_PhieuVatTu.Location = new System.Drawing.Point(132, 72);
+            this.cmbID_PhieuVatTu.Name = "cmbID_PhieuVatTu";
+            this.cmbID_PhieuVatTu.Size = new System.Drawing.Size(236, 21);
+            this.cmbID_PhieuVatTu.TabIndex = 19;
             // 
             // btnHuy
             // 
@@ -211,8 +215,9 @@
             this.cmbTenVT.FormattingEnabled = true;
             this.cmbTenVT.Location = new System.Drawing.Point(132, 107);
             this.cmbTenVT.Name = "cmbTenVT";
-            this.cmbTenVT.Size = new System.Drawing.Size(236, 21);
+            this.cmbTenVT.Size = new System.Drawing.Size(139, 21);
             this.cmbTenVT.TabIndex = 6;
+            this.cmbTenVT.TextChanged += new System.EventHandler(this.cmbTenVT_TextChanged);
             // 
             // txtSoLuong
             // 
@@ -349,16 +354,36 @@
             // 
             // cmbTimKiem
             // 
+            this.cmbTimKiem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTimKiem.FormattingEnabled = true;
             this.cmbTimKiem.Items.AddRange(new object[] {
-            "Mã hóa đơn",
-            "Mã phiếu vật tư",
+            "ID hóa đơn",
+            "ID phiếu vật tư",
             "Tên vật tư"});
             this.cmbTimKiem.Location = new System.Drawing.Point(107, 7);
             this.cmbTimKiem.Name = "cmbTimKiem";
             this.cmbTimKiem.Size = new System.Drawing.Size(121, 21);
             this.cmbTimKiem.TabIndex = 2;
             this.cmbTimKiem.SelectionChangeCommitted += new System.EventHandler(this.cmbTimKiem_SelectionChangeCommitted);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(277, 110);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(21, 16);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "ID";
+            // 
+            // cmbID_VatTu
+            // 
+            this.cmbID_VatTu.FormattingEnabled = true;
+            this.cmbID_VatTu.Location = new System.Drawing.Point(304, 107);
+            this.cmbID_VatTu.Name = "cmbID_VatTu";
+            this.cmbID_VatTu.Size = new System.Drawing.Size(64, 21);
+            this.cmbID_VatTu.TabIndex = 23;
+            this.cmbID_VatTu.TextChanged += new System.EventHandler(this.cmbID_VatTu_TextChanged);
             // 
             // frmHoaDon_PhieuVatTu
             // 
@@ -402,8 +427,8 @@
         private System.Windows.Forms.ListView lsvHD_PVT;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox cmbMaPVT;
-        private System.Windows.Forms.TextBox txtMaHDVT;
+        private System.Windows.Forms.ComboBox cmbID_PhieuVatTu;
+        private System.Windows.Forms.TextBox txtID_HoaDonVatTu;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
@@ -411,5 +436,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ComboBox cmbValue;
+        private System.Windows.Forms.ComboBox cmbID_VatTu;
+        private System.Windows.Forms.Label label6;
     }
 }

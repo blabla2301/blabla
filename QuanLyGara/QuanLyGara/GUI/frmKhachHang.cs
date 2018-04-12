@@ -30,7 +30,7 @@ namespace QuanLyGara.GUI
 
         public void lockControl()
         {
-            txtMaKH.Enabled = false;
+            txtID_KhachHang.Enabled = false;
             txtHoTen.Enabled = false;
             txtSDT.Enabled = false;
             txtEmail.Enabled = false;
@@ -45,7 +45,7 @@ namespace QuanLyGara.GUI
 
         public void openControl()
         {
-            txtMaKH.Enabled = true;
+            txtID_KhachHang.Enabled = true;
             txtHoTen.Enabled = true;
             txtSDT.Enabled = true;
             txtEmail.Enabled = true;
@@ -74,7 +74,7 @@ namespace QuanLyGara.GUI
         public void addList(SqlDataReader dr)
         {
             ListViewItem item = new ListViewItem();
-            item.Text = dr["MaKH"].ToString();
+            item.Text = dr["ID_KhachHang"].ToString();
             item.SubItems.Add(dr["HoTen"].ToString());
             item.SubItems.Add(dr["SDT"].ToString());
             item.SubItems.Add(dr["Email"].ToString());
@@ -89,7 +89,10 @@ namespace QuanLyGara.GUI
 
         public void clearControl()
         {
-            txtMaKH.ResetText();
+            string query = "select count(ID_KhachHang) from KHACHHANG";
+            DAL.sqlConnect sqlConn = new DAL.sqlConnect();
+            int count = int.Parse(sqlConn.execScanler(query));
+            txtID_KhachHang.Text = "KH" + (count + 1).ToString();
             txtHoTen.ResetText();
             txtSDT.ResetText();
             txtEmail.ResetText();
@@ -103,14 +106,14 @@ namespace QuanLyGara.GUI
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
             clearControl();
-            txtMaKH.Focus();
+            txtID_KhachHang.Focus();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
             kt = false;
             openControl();
-            txtMaKH.Enabled = false;
+            txtID_KhachHang.Enabled = false;
             btnXoa.Enabled = false;
             btnThem.Enabled = false;
             txtHoTen.Focus();
@@ -122,7 +125,7 @@ namespace QuanLyGara.GUI
             if (check == DialogResult.Yes)
             {
                 ENTITY.KhachHang kh = new ENTITY.KhachHang();
-                kh.MaKH = txtMaKH.Text.Trim();
+                kh.ID_KhachHang = txtID_KhachHang.Text.Trim();
                 DAL.KhachHang_Model k = new DAL.KhachHang_Model();
                 k.deleteKHACHHANG(kh);
             }
@@ -134,7 +137,7 @@ namespace QuanLyGara.GUI
         private void btnLuu_Click(object sender, EventArgs e)
         {
             ENTITY.KhachHang kh = new ENTITY.KhachHang();
-            kh.MaKH = txtMaKH.Text.Trim();
+            kh.ID_KhachHang = txtID_KhachHang.Text.Trim();
             kh.HoTen = txtHoTen.Text.Trim();
             kh.SDT = txtSDT.Text.Trim();
             kh.Email = txtEmail.Text.Trim();
@@ -188,7 +191,7 @@ namespace QuanLyGara.GUI
         {
             if (lsvKhachHang.SelectedItems.Count > 0)
             {
-                txtMaKH.Text = lsvKhachHang.SelectedItems[0].SubItems[0].Text;
+                txtID_KhachHang.Text = lsvKhachHang.SelectedItems[0].SubItems[0].Text;
                 txtHoTen.Text = lsvKhachHang.SelectedItems[0].SubItems[1].Text;
                 txtSDT.Text = lsvKhachHang.SelectedItems[0].SubItems[2].Text;
                 txtEmail.Text = lsvKhachHang.SelectedItems[0].SubItems[3].Text;
@@ -209,7 +212,7 @@ namespace QuanLyGara.GUI
             {
                 if (key == 0)
                 {
-                    cmbValue.Items.Add(dr["MaKH"].ToString());
+                    cmbValue.Items.Add(dr["ID_KhachHang"].ToString());
                 }
                 else if (key == 1)
                 {

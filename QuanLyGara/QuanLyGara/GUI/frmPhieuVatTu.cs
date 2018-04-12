@@ -215,11 +215,6 @@ namespace QuanLyGara.GUI
             }
         }
 
-        private void cmbValue_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
 
     }
 }

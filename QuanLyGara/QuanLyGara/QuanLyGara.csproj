@@ -61,19 +61,6 @@
     <Compile Include="DAL\sqlConnect.cs" />
     <Compile Include="DAL\VatTu_Model.cs" />
     <Compile Include="DAL\Xe_Model.cs" />
-    <Compile Include="DATA\TimKiemHangXe.cs" />
-    <Compile Include="DATA\TimKiemHD_PVT.cs" />
-    <Compile Include="DATA\TimKiemHoaDonThanhToan.cs" />
-    <Compile Include="DATA\TimKiemKhachHang.cs" />
-    <Compile Include="DATA\TimKiemLSC.cs" />
-    <Compile Include="DATA\TimKiemNhaCungCap.cs" />
-    <Compile Include="DATA\TimKiemNhanVien.cs" />
-    <Compile Include="DATA\TimKiemPhanCong.cs" />
-    <Compile Include="DATA\TimKiemPhieuDanhGia.cs" />
-    <Compile Include="DATA\TimKiemPhieuKhaoSat.cs" />
-    <Compile Include="DATA\TimKiemPhieuVatTu.cs" />
-    <Compile Include="DATA\TimKiemThongTinXe.cs" />
-    <Compile Include="DATA\TimKiemVatTu.cs" />
     <Compile Include="ENTITY\HangXe.cs" />
     <Compile Include="ENTITY\HoaDonThanhToan.cs" />
     <Compile Include="ENTITY\HoaDonVatTu.cs" />
@@ -118,18 +105,6 @@
     </Compile>
     <Compile Include="GUI\frmHangXe.Designer.cs">
       <DependentUpon>frmHangXe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemHangXe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemHangXe.Designer.cs">
-      <DependentUpon>frmTimKiemHangXe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemHDTT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemHDTT.Designer.cs">
-      <DependentUpon>frmTimKiemHDTT.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmHoaDonThanhToan.cs">
       <SubType>Form</SubType>
@@ -227,72 +202,6 @@
     <Compile Include="GUI\frmThongTinXe.Designer.cs">
       <DependentUpon>frmThongTinXe.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmTimKiemHD_PVT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemHD_PVT.Designer.cs">
-      <DependentUpon>frmTimKiemHD_PVT.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemKH.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemKH.Designer.cs">
-      <DependentUpon>frmTimKiemKH.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemLSC.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemLSC.Designer.cs">
-      <DependentUpon>frmTimKiemLSC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemNCC.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemNCC.Designer.cs">
-      <DependentUpon>frmTimKiemNCC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemNV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemNV.Designer.cs">
-      <DependentUpon>frmTimKiemNV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemPC.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemPC.Designer.cs">
-      <DependentUpon>frmTimKiemPC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemPDG.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemPDG.Designer.cs">
-      <DependentUpon>frmTimKiemPDG.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemPKS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemPKS.Designer.cs">
-      <DependentUpon>frmTimKiemPKS.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemPVT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemPVT.Designer.cs">
-      <DependentUpon>frmTimKiemPVT.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemTTX.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemTTX.Designer.cs">
-      <DependentUpon>frmTimKiemTTX.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemVatTu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmTimKiemVatTu.Designer.cs">
-      <DependentUpon>frmTimKiemVatTu.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\frmVatTu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -312,12 +221,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmHangXe.resx">
       <DependentUpon>frmHangXe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmTimKiemHangXe.resx">
-      <DependentUpon>frmTimKiemHangXe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmTimKiemHDTT.resx">
-      <DependentUpon>frmTimKiemHDTT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmHoaDonThanhToan.resx">
       <DependentUpon>frmHoaDonThanhToan.cs</DependentUpon>
@@ -366,39 +269,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmThongTinXe.resx">
       <DependentUpon>frmThongTinXe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmTimKiemHD_PVT.resx">
-      <DependentUpon>frmTimKiemHD_PVT.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmTimKiemKH.resx">
-      <DependentUpon>frmTimKiemKH.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmTimKiemLSC.resx">
-      <DependentUpon>frmTimKiemLSC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmTimKiemNCC.resx">
-      <DependentUpon>frmTimKiemNCC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmTimKiemNV.resx">
-      <DependentUpon>frmTimKiemNV.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmTimKiemPC.resx">
-      <DependentUpon>frmTimKiemPC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmTimKiemPDG.resx">
-      <DependentUpon>frmTimKiemPDG.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmTimKiemPKS.resx">
-      <DependentUpon>frmTimKiemPKS.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmTimKiemPVT.resx">
-      <DependentUpon>frmTimKiemPVT.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmTimKiemTTX.resx">
-      <DependentUpon>frmTimKiemTTX.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmTimKiemVatTu.resx">
-      <DependentUpon>frmTimKiemVatTu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmVatTu.resx">
       <DependentUpon>frmVatTu.cs</DependentUpon>
@@ -500,6 +370,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Symbol-Delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_refresh_59300.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_old-view-refresh_23502.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\painel-adesivo-carros-carros.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

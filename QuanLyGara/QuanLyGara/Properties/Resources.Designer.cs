@@ -233,6 +233,26 @@ namespace QuanLyGara.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_old_view_refresh_23502 {
+            get {
+                object obj = ResourceManager.GetObject("if_old-view-refresh_23502", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_refresh_59300 {
+            get {
+                object obj = ResourceManager.GetObject("if_refresh_59300", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_reload_15542 {
             get {
                 object obj = ResourceManager.GetObject("if_reload_15542", resourceCulture);
@@ -286,6 +306,16 @@ namespace QuanLyGara.Properties {
         internal static System.Drawing.Bitmap nhanvien {
             get {
                 object obj = ResourceManager.GetObject("nhanvien", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap painel_adesivo_carros_carros {
+            get {
+                object obj = ResourceManager.GetObject("painel-adesivo-carros-carros", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

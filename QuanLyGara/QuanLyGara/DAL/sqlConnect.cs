@@ -10,7 +10,7 @@ namespace QuanLyGara.DAL
 {
     class sqlConnect
     {
-        private string strConn = "Data Source=DESKTOP-KAC013U;Initial Catalog=QuanLyGara;Integrated Security=True";
+        private string strConn = "Data Source=DESKTOP-CAVR9S4;Initial Catalog=QuanLyGara;Integrated Security=True";
         private SqlCommand cmd = null;
         private SqlConnection conn = null;
 

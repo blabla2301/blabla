@@ -30,8 +30,8 @@ namespace QuanLyGara.GUI
 
         public void lockControl()
         {
-            txtMaHD.Enabled = false;
-            cmbMaLSC.Enabled = false;
+            txtID_HoaDonThanhToan.Enabled = false;
+            cmbID_LenhSuaChua.Enabled = false;
             txtTenHD.Enabled = false;
             txtMaNPT.Enabled = false;
             txtTienDichVu.Enabled = false;
@@ -45,8 +45,8 @@ namespace QuanLyGara.GUI
 
         public void openControl()
         {
-            txtMaHD.Enabled = true;
-            cmbMaLSC.Enabled = true;
+            txtID_HoaDonThanhToan.Enabled = true;
+            cmbID_LenhSuaChua.Enabled = true;
             txtTenHD.Enabled = true;
             txtMaNPT.Enabled = true;
             txtTienDichVu.Enabled = true;
@@ -57,8 +57,11 @@ namespace QuanLyGara.GUI
 
         public void clearControl()
         {
-            txtMaHD.ResetText();
-            cmbMaLSC.ResetText();
+            string query = "select count(ID_HoaDonThanhToan) from HOADON_THANHTOAN";
+            DAL.sqlConnect sqlConn = new DAL.sqlConnect();
+            int count = int.Parse(sqlConn.execScanler(query));
+            txtID_HoaDonThanhToan.Text = "HDTT" + (count + 1).ToString();
+            cmbID_LenhSuaChua.ResetText();
             txtTenHD.ResetText();
             txtMaNPT.ResetText();
             txtTienDichVu.ResetText();
@@ -70,7 +73,7 @@ namespace QuanLyGara.GUI
             SqlDataReader dr = sqlConn.getDataTable("LENHSUACHUA");
             while (dr.Read())
             {
-                cmbMaLSC.Items.Add(dr["MaLenhSuaChua"].ToString());
+                cmbID_LenhSuaChua.Items.Add(dr["ID_LenhSuaChua"].ToString());
             }
             //cmbTimKiem.SelectedIndex = 0;
         }
@@ -78,8 +81,8 @@ namespace QuanLyGara.GUI
         public void addList(SqlDataReader dr)
         {
             ListViewItem item = new ListViewItem();
-            item.Text = dr["MaHoaDon"].ToString();
-            item.SubItems.Add(dr["MaLenhSuaChua"].ToString());
+            item.Text = dr["ID_HoaDonThanhToan"].ToString();
+            item.SubItems.Add(dr["ID_LenhSuaChua"].ToString());
             item.SubItems.Add(dr["TenHoaDon"].ToString());
             item.SubItems.Add(dr["MaNguoiPhuTrach"].ToString());
             item.SubItems.Add(dr["TienDichVu"].ToString());
@@ -110,17 +113,17 @@ namespace QuanLyGara.GUI
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
             clearControl();
-            txtMaHD.Focus();
+            txtID_HoaDonThanhToan.Focus();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
             kt = false;
             openControl();
-            txtMaHD.Enabled = false;
+            txtID_HoaDonThanhToan.Enabled = false;
             btnThem.Enabled = false;
             btnXoa.Enabled = false;
-            cmbMaLSC.Focus();
+            cmbID_LenhSuaChua.Focus();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -129,7 +132,7 @@ namespace QuanLyGara.GUI
             if (check == DialogResult.Yes)
             {
                 ENTITY.HoaDonThanhToan hd = new ENTITY.HoaDonThanhToan();
-                hd.MaHD = txtMaHD.Text.Trim();
+                hd.ID_HoaDonThanhToan = txtID_HoaDonThanhToan.Text.Trim();
                 DAL.HoaDonThanhToan_Model h = new DAL.HoaDonThanhToan_Model();
                 h.deleteHoaDonThanhToan(hd);
             }
@@ -141,8 +144,8 @@ namespace QuanLyGara.GUI
         private void btnLuu_Click(object sender, EventArgs e)
         {
             ENTITY.HoaDonThanhToan h = new ENTITY.HoaDonThanhToan();
-            h.MaHD = txtMaHD.Text.Trim();
-            h.MaLSC = cmbMaLSC.Text.Trim();
+            h.ID_HoaDonThanhToan = txtID_HoaDonThanhToan.Text.Trim();
+            h.ID_LenhSuaChua = cmbID_LenhSuaChua.Text.Trim();
             h.TenHD = txtTenHD.Text.Trim();
             h.MaNPT = txtMaNPT.Text.Trim();
             h.TienDichVu = txtTienDichVu.Text.Trim();
@@ -194,8 +197,8 @@ namespace QuanLyGara.GUI
         {
             if (lsvHD_TT.SelectedItems.Count > 0)
             {
-                txtMaHD.Text = lsvHD_TT.SelectedItems[0].SubItems[0].Text;
-                cmbMaLSC.Text = lsvHD_TT.SelectedItems[0].SubItems[1].Text;
+                txtID_HoaDonThanhToan.Text = lsvHD_TT.SelectedItems[0].SubItems[0].Text;
+                cmbID_LenhSuaChua.Text = lsvHD_TT.SelectedItems[0].SubItems[1].Text;
                 txtTenHD.Text = lsvHD_TT.SelectedItems[0].SubItems[2].Text;
                 txtMaNPT.Text = lsvHD_TT.SelectedItems[0].SubItems[3].Text;
                 txtTienDichVu.Text = lsvHD_TT.SelectedItems[0].SubItems[4].Text;
@@ -215,14 +218,14 @@ namespace QuanLyGara.GUI
             {
                 while (dr.Read())
                 {
-                    cmbValue.Items.Add(dr["MaHoaDon"].ToString());
+                    cmbValue.Items.Add(dr["ID_HoaDonThanhToan"].ToString());
                 }
             }
             else if (key == 1)
             {
                 while (dr.Read())
                 {
-                    cmbValue.Items.Add(dr["MaLenhSuaChua"].ToString());
+                    cmbValue.Items.Add(dr["ID_LenhSuaChua"].ToString());
                 }
             }
             else if (key == 2)

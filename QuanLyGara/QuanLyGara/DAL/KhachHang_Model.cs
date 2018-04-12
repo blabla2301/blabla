@@ -18,7 +18,7 @@ namespace QuanLyGara.DAL
                 openConnection();
                 SqlCommand cmd = new SqlCommand("ThemKH", Conn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@MaKH", kh.MaKH);
+                cmd.Parameters.AddWithValue("@ID_KhachHang", kh.ID_KhachHang);
                 cmd.Parameters.AddWithValue("@HoTen", kh.HoTen);
                 cmd.Parameters.AddWithValue("@SDT", kh.SDT);
                 cmd.Parameters.AddWithValue("@Email", kh.Email);
@@ -42,7 +42,7 @@ namespace QuanLyGara.DAL
                 openConnection();
                 SqlCommand cmd = new SqlCommand("SuaKH", Conn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@MaKH", kh.MaKH);
+                cmd.Parameters.AddWithValue("@ID_KhachHang", kh.ID_KhachHang);
                 cmd.Parameters.AddWithValue("@HoTen", kh.HoTen);
                 cmd.Parameters.AddWithValue("@SDT", kh.SDT);
                 cmd.Parameters.AddWithValue("@Email", kh.Email);
@@ -66,7 +66,7 @@ namespace QuanLyGara.DAL
                 openConnection();
                 SqlCommand cmd = new SqlCommand("XoaKH", Conn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@MaKH", kh.MaKH);
+                cmd.Parameters.AddWithValue("@ID_KhachHang", kh.ID_KhachHang);
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -85,7 +85,7 @@ namespace QuanLyGara.DAL
             string query;
             if (name.Equals("Mã khách hàng"))
             {
-                query = "select * from KHACHHANG where MaKH like '" + value + "%'";
+                query = "select * from KHACHHANG where ID_KhachHang like '" + value + "%'";
                 dr = execCommand(query);
             }
             else if (name.Equals("Họ tên"))

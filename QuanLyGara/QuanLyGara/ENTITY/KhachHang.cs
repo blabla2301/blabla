@@ -8,12 +8,12 @@ namespace QuanLyGara.ENTITY
 {
     class KhachHang
     {
-        private string makh;
+        private string id_khachhang;
 
-        public string MaKH
+        public string ID_KhachHang
         {
-            get { return makh; }
-            set { makh = value; }
+            get { return id_khachhang; }
+            set { id_khachhang = value; }
         }
         private string hoten;
 

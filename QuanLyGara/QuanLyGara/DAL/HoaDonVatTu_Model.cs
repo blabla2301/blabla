@@ -17,9 +17,9 @@ namespace QuanLyGara.DAL
                 openConnection();
                 SqlCommand cmd = new SqlCommand("ThemHD_PVT", Conn);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@MaHDVT", h.MaHDVT);
-                cmd.Parameters.AddWithValue("@MaPVT", h.MaPVT);
-                cmd.Parameters.AddWithValue("@TenVT", h.TenVT);
+                cmd.Parameters.AddWithValue("@ID_HoaDonVatTu", h.ID_HoaDonVatTu);
+                cmd.Parameters.AddWithValue("@ID_PhieuVatTu", h.ID_PhieuVatTu);
+                cmd.Parameters.AddWithValue("@ID_VatTu", h.ID_vatTu);
                 cmd.Parameters.AddWithValue("@SoLuong", h.SoLuong);
                 cmd.ExecuteNonQuery();
             }
@@ -40,9 +40,9 @@ namespace QuanLyGara.DAL
                 openConnection();
                 SqlCommand cmd = new SqlCommand("SuaHD_PVT", Conn);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@MaHDVT", h.MaHDVT);
-                cmd.Parameters.AddWithValue("@MaPVT", h.MaPVT);
-                cmd.Parameters.AddWithValue("@TenVT", h.TenVT);
+                cmd.Parameters.AddWithValue("@ID_HoaDonVatTu", h.ID_HoaDonVatTu);
+                cmd.Parameters.AddWithValue("@ID_PhieuVatTu", h.ID_PhieuVatTu);
+                cmd.Parameters.AddWithValue("@ID_VatTu", h.ID_vatTu);
                 cmd.Parameters.AddWithValue("@SoLuong", h.SoLuong);
                 cmd.ExecuteNonQuery();
             }
@@ -63,7 +63,7 @@ namespace QuanLyGara.DAL
                 openConnection();
                 SqlCommand cmd = new SqlCommand("XoaHD_PVT", Conn);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@MaHDVT", h.MaHDVT);
+                cmd.Parameters.AddWithValue("@ID_HoaDonVatTu", h.ID_HoaDonVatTu);
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -80,19 +80,19 @@ namespace QuanLyGara.DAL
         {
             SqlDataReader dr = null;
             string query;
-            if (name.Equals("Mã hóa đơn"))
+            if (name.Equals("ID hóa đơn"))
             {
-                query = "select * from HOADON_PHIEUVATTU where MaHDVT like '" + value + "%'";
+                query = "select hd.ID_HoaDonVatTu, p.ID_PhieuVatTu, vt.TenVatTu, hd.SoLuong, hd.TongTien from HOADON_PHIEUVATTU hd, PHIEUVATTU p, VATTU vt where hd.ID_VatTu = vt.ID_VatTu and hd.ID_PhieuVatTu = p.ID_PhieuVatTu and ID_HoaDonVatTu like '" + value + "%'";
                 dr = execCommand(query);
             }
-            else if (name.Equals("Mã phiếu vật tư"))
+            else if (name.Equals("ID phiếu vật tư"))
             {
-                query = "select * from HOADON_PHIEUVATTU where MaPhieuVatTu like '" + value + "%'";
+                query = "select hd.ID_HoaDonVatTu, p.ID_PhieuVatTu, vt.TenVatTu, hd.SoLuong, hd.TongTien from HOADON_PHIEUVATTU hd, PHIEUVATTU p, VATTU vt where hd.ID_VatTu = vt.ID_VatTu and hd.ID_PhieuVatTu = p.ID_PhieuVatTu and ID_PhieuVatTu like '" + value + "%'";
                 dr = execCommand(query);
             }
             else
             {
-                query = "select * from HOADON_PHIEUVATTU where TenVatTu like '" + value + "%'";
+                query = "select hd.ID_HoaDonVatTu, p.ID_PhieuVatTu, vt.TenVatTu, hd.SoLuong, hd.TongTien from HOADON_PHIEUVATTU hd, PHIEUVATTU p, VATTU vt where hd.ID_VatTu = vt.ID_VatTu and hd.ID_PhieuVatTu = p.ID_PhieuVatTu and TenVatTu like '" + value + "%'";
                 dr = execCommand(query);
             }
             return dr;

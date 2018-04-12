@@ -40,7 +40,7 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.txtSDT = new System.Windows.Forms.TextBox();
-            this.txtMaKH = new System.Windows.Forms.TextBox();
+            this.txtID_KhachHang = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,11 +53,11 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cmbValue = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbTimKiem = new System.Windows.Forms.ComboBox();
-            this.cmbValue = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -77,7 +77,7 @@
             this.groupBox1.Controls.Add(this.btnSua);
             this.groupBox1.Controls.Add(this.btnThem);
             this.groupBox1.Controls.Add(this.txtSDT);
-            this.groupBox1.Controls.Add(this.txtMaKH);
+            this.groupBox1.Controls.Add(this.txtID_KhachHang);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
@@ -206,13 +206,13 @@
             this.txtSDT.Size = new System.Drawing.Size(236, 25);
             this.txtSDT.TabIndex = 5;
             // 
-            // txtMaKH
+            // txtID_KhachHang
             // 
-            this.txtMaKH.Location = new System.Drawing.Point(139, 39);
-            this.txtMaKH.Multiline = true;
-            this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(236, 25);
-            this.txtMaKH.TabIndex = 3;
+            this.txtID_KhachHang.Location = new System.Drawing.Point(139, 39);
+            this.txtID_KhachHang.Multiline = true;
+            this.txtID_KhachHang.Name = "txtID_KhachHang";
+            this.txtID_KhachHang.Size = new System.Drawing.Size(236, 25);
+            this.txtID_KhachHang.TabIndex = 3;
             // 
             // label3
             // 
@@ -324,6 +324,17 @@
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             // 
+            // cmbValue
+            // 
+            this.cmbValue.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbValue.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbValue.FormattingEnabled = true;
+            this.cmbValue.Location = new System.Drawing.Point(240, 7);
+            this.cmbValue.Name = "cmbValue";
+            this.cmbValue.Size = new System.Drawing.Size(114, 21);
+            this.cmbValue.Sorted = true;
+            this.cmbValue.TabIndex = 6;
+            // 
             // button1
             // 
             this.button1.Image = global::QuanLyGara.Properties.Resources.if_reload_15542;
@@ -359,6 +370,7 @@
             // 
             // cmbTimKiem
             // 
+            this.cmbTimKiem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTimKiem.FormattingEnabled = true;
             this.cmbTimKiem.Items.AddRange(new object[] {
             "Mã khách hàng",
@@ -371,17 +383,6 @@
             this.cmbTimKiem.Size = new System.Drawing.Size(121, 21);
             this.cmbTimKiem.TabIndex = 2;
             this.cmbTimKiem.SelectionChangeCommitted += new System.EventHandler(this.cmbTimKiem_SelectionChangeCommitted);
-            // 
-            // cmbValue
-            // 
-            this.cmbValue.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cmbValue.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cmbValue.FormattingEnabled = true;
-            this.cmbValue.Location = new System.Drawing.Point(240, 7);
-            this.cmbValue.Name = "cmbValue";
-            this.cmbValue.Size = new System.Drawing.Size(114, 21);
-            this.cmbValue.Sorted = true;
-            this.cmbValue.TabIndex = 6;
             // 
             // frmKhachHang
             // 
@@ -417,7 +418,7 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.TextBox txtSDT;
-        private System.Windows.Forms.TextBox txtMaKH;
+        private System.Windows.Forms.TextBox txtID_KhachHang;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

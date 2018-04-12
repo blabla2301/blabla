@@ -8,26 +8,26 @@ namespace QuanLyGara.ENTITY
 {
     class HoaDonVatTu
     {
-        private string mahdvt;
+        private string id_hoadonvattu;
 
-        public string MaHDVT
+        public string ID_HoaDonVatTu
         {
-            get { return mahdvt; }
-            set { mahdvt = value; }
+            get { return id_hoadonvattu; }
+            set { id_hoadonvattu = value; }
         }
-        private string mapvt;
+        private string id_phieuvattu;
 
-        public string MaPVT
+        public string ID_PhieuVatTu
         {
-            get { return mapvt; }
-            set { mapvt = value; }
+            get { return id_phieuvattu; }
+            set { id_phieuvattu = value; }
         }
-        private string tenvt;
+        private string id_vattu;
 
-        public string TenVT
+        public string ID_vatTu
         {
-            get { return tenvt; }
-            set { tenvt = value; }
+            get { return id_vattu; }
+            set { id_vattu = value; }
         }
         private string soluong;
 

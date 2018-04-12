@@ -38,9 +38,9 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.cmbMaLSC = new System.Windows.Forms.ComboBox();
+            this.cmbID_LenhSuaChua = new System.Windows.Forms.ComboBox();
             this.txtTenHD = new System.Windows.Forms.TextBox();
-            this.txtMaHD = new System.Windows.Forms.TextBox();
+            this.txtID_HoaDonThanhToan = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -76,9 +76,9 @@
             this.groupBox1.Controls.Add(this.btnXoa);
             this.groupBox1.Controls.Add(this.btnSua);
             this.groupBox1.Controls.Add(this.btnThem);
-            this.groupBox1.Controls.Add(this.cmbMaLSC);
+            this.groupBox1.Controls.Add(this.cmbID_LenhSuaChua);
             this.groupBox1.Controls.Add(this.txtTenHD);
-            this.groupBox1.Controls.Add(this.txtMaHD);
+            this.groupBox1.Controls.Add(this.txtID_HoaDonThanhToan);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
@@ -191,16 +191,16 @@
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // cmbMaLSC
+            // cmbID_LenhSuaChua
             // 
-            this.cmbMaLSC.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cmbMaLSC.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cmbMaLSC.FormattingEnabled = true;
-            this.cmbMaLSC.Location = new System.Drawing.Point(139, 79);
-            this.cmbMaLSC.Name = "cmbMaLSC";
-            this.cmbMaLSC.Size = new System.Drawing.Size(236, 21);
-            this.cmbMaLSC.Sorted = true;
-            this.cmbMaLSC.TabIndex = 6;
+            this.cmbID_LenhSuaChua.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbID_LenhSuaChua.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbID_LenhSuaChua.FormattingEnabled = true;
+            this.cmbID_LenhSuaChua.Location = new System.Drawing.Point(139, 79);
+            this.cmbID_LenhSuaChua.Name = "cmbID_LenhSuaChua";
+            this.cmbID_LenhSuaChua.Size = new System.Drawing.Size(236, 21);
+            this.cmbID_LenhSuaChua.Sorted = true;
+            this.cmbID_LenhSuaChua.TabIndex = 6;
             // 
             // txtTenHD
             // 
@@ -210,13 +210,13 @@
             this.txtTenHD.Size = new System.Drawing.Size(236, 25);
             this.txtTenHD.TabIndex = 5;
             // 
-            // txtMaHD
+            // txtID_HoaDonThanhToan
             // 
-            this.txtMaHD.Location = new System.Drawing.Point(139, 39);
-            this.txtMaHD.Multiline = true;
-            this.txtMaHD.Name = "txtMaHD";
-            this.txtMaHD.Size = new System.Drawing.Size(236, 25);
-            this.txtMaHD.TabIndex = 3;
+            this.txtID_HoaDonThanhToan.Location = new System.Drawing.Point(139, 39);
+            this.txtID_HoaDonThanhToan.Multiline = true;
+            this.txtID_HoaDonThanhToan.Name = "txtID_HoaDonThanhToan";
+            this.txtID_HoaDonThanhToan.Size = new System.Drawing.Size(236, 25);
+            this.txtID_HoaDonThanhToan.TabIndex = 3;
             // 
             // label3
             // 
@@ -381,6 +381,7 @@
             // 
             // cmbTimKiem
             // 
+            this.cmbTimKiem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTimKiem.FormattingEnabled = true;
             this.cmbTimKiem.Items.AddRange(new object[] {
             "Mã hóa đơn",
@@ -422,9 +423,9 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.ComboBox cmbMaLSC;
+        private System.Windows.Forms.ComboBox cmbID_LenhSuaChua;
         private System.Windows.Forms.TextBox txtTenHD;
-        private System.Windows.Forms.TextBox txtMaHD;
+        private System.Windows.Forms.TextBox txtID_HoaDonThanhToan;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

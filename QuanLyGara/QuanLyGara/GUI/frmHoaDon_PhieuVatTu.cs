@@ -30,8 +30,9 @@ namespace QuanLyGara.GUI
 
         public void lockControl()
         {
-            txtMaHDVT.Enabled = false;
-            cmbMaPVT.Enabled = false;
+            txtID_HoaDonVatTu.Enabled = false;
+            cmbID_PhieuVatTu.Enabled = false;
+            cmbID_VatTu.Enabled = false;
             txtSoLuong.Enabled = false;
             cmbTenVT.Enabled = false;
             btnThem.Enabled = true;
@@ -44,8 +45,9 @@ namespace QuanLyGara.GUI
 
         public void openControl()
         {
-            txtMaHDVT.Enabled = true;
-            cmbMaPVT.Enabled = true;
+            txtID_HoaDonVatTu.Enabled = true;
+            cmbID_PhieuVatTu.Enabled = true;
+            cmbID_VatTu.Enabled = true;
             txtSoLuong.Enabled = true;
             cmbTenVT.Enabled = true;
             btnLuu.Enabled = true;
@@ -55,8 +57,11 @@ namespace QuanLyGara.GUI
 
         public void clearControl()
         {
-            txtMaHDVT.ResetText();
-            cmbMaPVT.ResetText();
+            string query = "select count(ID_HoaDonVatTu) from HOADON_PHIEUVATTU";
+            DAL.sqlConnect sqlConn = new DAL.sqlConnect();
+            int count = int.Parse(sqlConn.execScanler(query));
+            txtID_HoaDonVatTu.Text = "HDVT" + (count + 1).ToString();
+            cmbID_PhieuVatTu.ResetText();
             cmbTenVT.ResetText();
             txtSoLuong.ResetText();
         }
@@ -64,8 +69,8 @@ namespace QuanLyGara.GUI
         public void addList(SqlDataReader dr)
         {
             ListViewItem item = new ListViewItem();
-            item.Text = dr["MaHDVT"].ToString();
-            item.SubItems.Add(dr["MaPhieuVatTu"].ToString());
+            item.Text = dr["ID_HoaDonVatTu"].ToString();
+            item.SubItems.Add(dr["ID_PhieuVatTu"].ToString());
             item.SubItems.Add(dr["TenVatTu"].ToString());
             item.SubItems.Add(dr["SoLuong"].ToString());
             item.SubItems.Add(dr["TongTien"].ToString());
@@ -80,8 +85,9 @@ namespace QuanLyGara.GUI
         public void showLsvHD_PVT()
         {
             clearLsvHD_PVT();
+            string query = "select hd.ID_HoaDonVatTu, p.ID_PhieuVatTu, vt.TenVatTu, hd.SoLuong, hd.TongTien from HOADON_PHIEUVATTU hd, PHIEUVATTU p, VATTU vt where hd.ID_VatTu = vt.ID_VatTu and hd.ID_PhieuVatTu = p.ID_PhieuVatTu";
             DAL.sqlConnect sqlConn = new DAL.sqlConnect();
-            SqlDataReader dr = sqlConn.getDataTable("HOADON_PHIEUVATTU");
+            SqlDataReader dr = sqlConn.execCommand(query);
             while (dr.Read())
             {
                 addList(dr);
@@ -94,12 +100,13 @@ namespace QuanLyGara.GUI
             SqlDataReader pvt = sqlConn.getDataTable("PHIEUVATTU");
             while (pvt.Read())
             {
-                cmbMaPVT.Items.Add(pvt["MaPhieuVatTu"].ToString());
+                cmbID_PhieuVatTu.Items.Add(pvt["ID_PhieuVatTu"].ToString());
             }
             sqlConn.closeConnection();
             SqlDataReader vt = sqlConn.getDataTable("VATTU");
             while (vt.Read())
             {
+                cmbID_VatTu.Items.Add(vt["ID_VatTu"].ToString());
                 cmbTenVT.Items.Add(vt["TenVatTu"].ToString());
             }
 
@@ -112,7 +119,7 @@ namespace QuanLyGara.GUI
             openControl();
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
-            txtMaHDVT.Focus();
+            txtID_HoaDonVatTu.Focus();
             clearControl();
         }
 
@@ -120,7 +127,7 @@ namespace QuanLyGara.GUI
         {
             kt = false;
             openControl();
-            txtMaHDVT.Enabled = false;
+            txtID_HoaDonVatTu.Enabled = false;
             btnThem.Enabled = false;
             btnXoa.Enabled = false;
         }
@@ -131,7 +138,7 @@ namespace QuanLyGara.GUI
             if (check == DialogResult.Yes)
             {
                 ENTITY.HoaDonVatTu h = new ENTITY.HoaDonVatTu();
-                h.MaHDVT = txtMaHDVT.Text.Trim();
+                h.ID_HoaDonVatTu = txtID_HoaDonVatTu.Text.Trim();
                 DAL.HoaDonVatTu_Model k = new DAL.HoaDonVatTu_Model();
                 k.deleteHoaDonVatTu(h);
             }
@@ -143,13 +150,12 @@ namespace QuanLyGara.GUI
         private void btnLuu_Click(object sender, EventArgs e)
         {
             ENTITY.HoaDonVatTu h = new ENTITY.HoaDonVatTu();
-            h.MaHDVT = txtMaHDVT.Text.Trim();
-            h.MaHDVT = txtMaHDVT.Text.Trim();
-            h.MaPVT = cmbMaPVT.Text.Trim();
-            h.TenVT = cmbTenVT.Text.Trim();
+            h.ID_HoaDonVatTu = txtID_HoaDonVatTu.Text.Trim();
+            h.ID_PhieuVatTu = cmbID_PhieuVatTu.Text.Trim();
+            h.ID_vatTu = cmbID_VatTu.Text.Trim();
             h.SoLuong = txtSoLuong.Text.Trim();
             DAL.HoaDonVatTu_Model hd = new DAL.HoaDonVatTu_Model();
-            if (kt==true)
+            if (kt == true)
             {
                 hd.insertHoaDonVatTu(h);
             }
@@ -196,13 +202,24 @@ namespace QuanLyGara.GUI
         {
             if (lsvHD_PVT.SelectedItems.Count > 0)
             {
-                txtMaHDVT.Text = lsvHD_PVT.SelectedItems[0].SubItems[0].Text;
-                cmbMaPVT.Text = lsvHD_PVT.SelectedItems[0].SubItems[1].Text;
+                txtID_HoaDonVatTu.Text = lsvHD_PVT.SelectedItems[0].SubItems[0].Text;
+                cmbID_PhieuVatTu.Text = lsvHD_PVT.SelectedItems[0].SubItems[1].Text;
                 cmbTenVT.Text = lsvHD_PVT.SelectedItems[0].SubItems[2].Text;
                 txtSoLuong.Text = lsvHD_PVT.SelectedItems[0].SubItems[3].Text;
 
                 btnSua.Enabled = true;
                 btnXoa.Enabled = true;
+            }
+        }
+
+        private void loadTenVT()
+        {
+            string query = "select TenVatTu from VATTU";
+            DAL.sqlConnect sqlConn = new DAL.sqlConnect();
+            SqlDataReader dr = sqlConn.execCommand(query);
+            while (dr.Read())
+            {
+                cmbValue.Items.Add(dr["TenVatTu"].ToString());
             }
         }
 
@@ -216,24 +233,38 @@ namespace QuanLyGara.GUI
             {
                 while (dr.Read())
                 {
-                    cmbValue.Items.Add(dr["MaHDVT"].ToString());
+                    cmbValue.Items.Add(dr["ID_HoaDonVatTu"].ToString());
                 }
             }
-            else if(key == 1)
+            else if (key == 1)
             {
                 while (dr.Read())
                 {
-                    cmbValue.Items.Add(dr["MaPhieuVatTu"].ToString());
+                    cmbValue.Items.Add(dr["ID_PhieuVatTu"].ToString());
                 }
             }
             else
             {
-                while (dr.Read())
-                {
-                    cmbValue.Items.Add(dr["TenVatTu"].ToString());
-                }
+                loadTenVT();
             }
         }
 
+        private void cmbTenVT_TextChanged(object sender, EventArgs e)
+        {
+            string key = cmbTenVT.Text.Trim();
+            string query = "select ID_VatTu from VATTU where TenVatTu like '" + key + "%'";
+            DAL.sqlConnect sqlConn = new DAL.sqlConnect();
+            string value = sqlConn.execScanler(query);
+            cmbID_VatTu.Text = value;
+        }
+
+        private void cmbID_VatTu_TextChanged(object sender, EventArgs e)
+        {
+            string key = cmbID_VatTu.Text.Trim();
+            string query = "select TenVatTu from VATTU where ID_VatTu like '" + key + "%'";
+            DAL.sqlConnect sqlConn = new DAL.sqlConnect();
+            string value = sqlConn.execScanler(query);
+            cmbTenVT.Text = value;
+        }
     }
 }

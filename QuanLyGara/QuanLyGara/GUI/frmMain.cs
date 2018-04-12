@@ -608,5 +608,11 @@ namespace QuanLyGara.GUI
             GUI.frmThongKe_HD_TT frm = new frmThongKe_HD_TT();
             frm.ShowDialog();
         }
+
+        private void hãngXeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GUI.frmHangXe frm = new frmHangXe();
+            frm.ShowDialog();
+        }
     }
 }

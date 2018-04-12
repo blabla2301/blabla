@@ -206,7 +206,7 @@ namespace QuanLyGara.GUI
             {
                 if (key == 0)
                 {
-                    cmbValue.Items.Add(dr["MaPhieuVatTu"].ToString());
+                    cmbValue.Items.Add(dr["ID_PhieuVatTu"].ToString());
                 }
                 else
                 {

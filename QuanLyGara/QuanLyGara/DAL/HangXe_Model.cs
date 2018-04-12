@@ -79,7 +79,7 @@ namespace QuanLyGara.DAL
         {
             string query;
             SqlDataReader dr = null;
-            if (key.Equals("ID hãng xe"))
+            if (key.Equals("ID"))
             {
                 query = "select * from HANGXE where ID_HangXe like '" + value + "%'";
                 dr = execCommand(query);

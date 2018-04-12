@@ -95,12 +95,12 @@ namespace QuanLyGara.DAL
             }
             else if (name.Equals("Thể loại"))
             {
-                query = "select vt.ID_VatTu, vt.TenVatTu, vt.TheLoai, vt.SoTien, c.TenNCC from VATTU vt, NHACUNGCAP c where vt.ID_NhaCungCap = c.ID_NhaCungCap vt.TheLoai like '" + value + "%'";
+                query = "select vt.ID_VatTu, vt.TenVatTu, vt.TheLoai, vt.SoTien, c.TenNCC from VATTU vt, NHACUNGCAP c where vt.ID_NhaCungCap = c.ID_NhaCungCap and vt.TheLoai like '" + value + "%'";
                 dr = execCommand(query);
             }
             else
             {
-                query = "select vt.ID_VatTu, vt.TenVatTu, vt.TheLoai, vt.SoTien, c.TenNCC from VATTU vt, NHACUNGCAP c where vt.ID_NhaCungCap = c.ID_NhaCungCap c.TenNCC like '" + value + "%'";
+                query = "select vt.ID_VatTu, vt.TenVatTu, vt.TheLoai, vt.SoTien, c.TenNCC from VATTU vt, NHACUNGCAP c where vt.ID_NhaCungCap = c.ID_NhaCungCap and c.TenNCC like '" + value + "%'";
                 dr = execCommand(query);
             }
             return dr;
